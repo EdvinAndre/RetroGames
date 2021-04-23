@@ -1,3 +1,3 @@
 # RetroGames
 
-The *RetroGames**
+The **RetroGames** repository 
