@@ -23,7 +23,6 @@ namespace Defender
 
         public override bool Draw(Color Color)
         {
-            //Color cl = RetroApplication.Blend(Color.Black, Color, 1);
             Color cl = Color;
 
             RetroApplication.Raster[this.x, this.y] = cl;
