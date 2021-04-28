@@ -3,8 +3,6 @@ using System.Drawing;
 using System.Collections.Generic;
 using RetroSharp;
 using System.Threading;
-//using System.Linq;
-//using System.Runtime.CompilerServices;
 
 namespace Defender
 {
@@ -110,27 +108,6 @@ namespace Defender
                         pixel.Draw(MountainPixel.TerrainColor);
                     }
                 }
-
-                
-                /*if (Enemies.Count > 1)
-                {
-                    Enemy FirstEnemy = Enemies.Last();
-
-                    foreach (Enemy enemy in Enemies)
-                    {
-                        if (!enemy.Equals(FirstEnemy) && !enemy.TimerStarted)
-                            enemy.StartTiming();
-                    }
-                }*/
-
-                /*MountainPixel FirstMountainPixel = MountainRangePixels.First.Value;
-                if (FirstMountainPixel.X == 480 || FirstMountainPixel.X == -4520)
-                {
-                    for (double Y = 400, X = 5000; X >= Convert.ToDouble(FirstMountainPixel.X); Y -= Math.Cos((int)X-- / 5 & -11))
-                    {
-                        MountainRangePixels.AddLast(new MountainPixel((int)X, (int)Y, 0, 0));
-                    }
-                }*/
 
                 if (Enemies.Count < Level)
                 {
@@ -350,7 +327,7 @@ namespace Defender
                     GameOver = true;
                 }
 
-                if ((Score == 300/*2250*/ && Level == 1) || (Score == 5250 && Level == 2) || (Score == 9000 && Level == 3))
+                if ((Score == 2250 && Level == 1) || (Score == 5250 && Level == 2) || (Score == 9000 && Level == 3))
                 {
                     ClearRaster();
                     Ship.DisposeSprite();
@@ -405,11 +382,6 @@ namespace Defender
                     case Key.Space:
                         Ship.Fire(ShipLazers);
                         break;
-
-                    /*case Key.Enter:
-                        if (GameOver)
-                            GameOver = false;
-                        break;*/
                 }
             };
 
