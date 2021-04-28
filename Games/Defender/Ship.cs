@@ -10,13 +10,12 @@ namespace Defender
         ShipLazers,
         EnemyShots
     }
+    
     public class Ship : MovingObject
     {
         private Sprite Sprite;
         private Ship position = null;
         private Gun gun = Gun.ShipLazers;
-        //private int minX = 98;
-        //private int maxX = 200;
         private int lastVX = 5;
 
         public Ship(int X, int Y, int VX, int VY, Sprite Sprite)
@@ -38,18 +37,12 @@ namespace Defender
         {
             this.vx = -5;
             this.lastVX = this.vx;
-            //this.x += this.vx;
-            /*if ((this.x > minX) && (this.x < maxX))
-                this.sprite.Move(this.vx, 0);*/
         }
 
         public void Right()
         {
             this.vx = 5;
             this.lastVX = this.vx;
-            //this.x += this.vx;
-            /*if ((this.x > minX) && (this.x < maxX))
-                this.sprite.Move(this.vx, 0);*/
         }
 
         public void Up()
@@ -84,11 +77,6 @@ namespace Defender
         {
             this.Sprite.Dispose();
         }
-
-        /*public void MoveBack()
-        {
-            this.sprite.MoveBack();
-        }*/
 
         public void Fire(LinkedList<ShipLazer> ShipLazers)
         {
