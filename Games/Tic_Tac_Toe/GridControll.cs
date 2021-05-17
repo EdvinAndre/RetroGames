@@ -1,9 +1,8 @@
-﻿using System;
 using System.Drawing;
 
 namespace Tic_Tac_Toe
 {
-    public abstract class GridControll
+    public class GridControll
     {
         // Checks if there is any moves left on the game-board.
         public static bool IsMovePossible(char[,] Board)
