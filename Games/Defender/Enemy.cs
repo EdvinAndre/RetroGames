@@ -70,7 +70,7 @@ namespace Defender
         public void StartTiming()
         {
             EnemyFire = false;
-            timer.Interval = 30000;
+            timer.Interval = 2000;
 
             timer.Elapsed += OnTimedEvent;
             timer.AutoReset = true;
