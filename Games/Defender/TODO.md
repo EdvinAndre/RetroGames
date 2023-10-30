@@ -1,0 +1,23 @@
+- [ ] Gradually reduce speed of MountainPixels & Stars when RIGHT or LEFT arrow is released
+- [ ] Make the ship flip when direction is changed
+- [ ] Update the apperence of shipLazer
+- [ ] Spawn more enemies
+- [ ] Add explosion when ship is destroyed
+- [ ] Add explosion when enemy is killed
+- [ ] Add implosion when enemy is spawned
+- [ ] Add astronauts
+  - [ ] Create astronaut sprite 
+  - [ ] Make the ship able to pick up astronauts
+  - [ ] Make enemies able to pick up astronauts
+- [ ] Add more enemy types
+  - [ ] Move enemy class into lander 
+  - [ ] Add mutants enemies
+  - [ ] Add baiter enemies
+  - [ ] Add pod enemies
+  - [ ] Add swarmers enemies
+  - [ ] Add bomber enemies
+- [ ] Animate ship texture
+- [ ] Update scoreboard
+  - [ ] Add minimap
+  - [ ] Represent lives with ship texture
+  - [ ] Change font of score
